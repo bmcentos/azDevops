@@ -24,7 +24,7 @@ export ORG=<ORG>
 ```
 #Execução do levantamento de metricas de build
 ```
-export CMD="bash release/releaseMetrics.sh"
+export CMD="release"
 export TABLE_NAME="tb_az_releases"
 ```
 ```
@@ -44,7 +44,7 @@ $CMD
 
 #Execução do levantamento de metricas de build
 ```
-export CMD="bash build/buildMetrics.sh"
+export CMD="build"
 export TABLE_NAME="tb_az_build"
 ```
 ```

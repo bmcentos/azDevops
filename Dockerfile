@@ -8,7 +8,6 @@ RUN apk update && \
       curl \
       jq \
       bash \
-      ncurses \
       coreutils
 
 #Habilita utilização de timestamp no formato ISO 8601 
@@ -20,6 +19,7 @@ WORKDIR /app
 COPY build/ build/
 COPY release/ release/
 COPY loadToPg.sh .
+COPY entrypoint.sh .
 
-CMD [ ]
+ENTRYPOINT [ "bash", "entrypoint.sh" ]
 
